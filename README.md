@@ -1,5 +1,5 @@
 # A simple personal page
-[Personal site](https://saul-bt.github.io)
+[View an example](https://saul-bt.github.io)
 # How to use it?
 ### First of all, clone the repo:
 ```bash
