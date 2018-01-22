@@ -1,0 +1,235 @@
+/* @import url("winter.css"); */
+
+footer, header, menu {display: block;}
+body {margin: 0; padding: 0; line-height: 1;}
+ol, ul {list-style: none;}
+ul {padding: 0;}
+a {
+	text-decoration: none;
+	color: #D16666;
+}
+header {
+  height: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #2D3047;
+}
+header > p {
+	margin: 0;
+  background-image: -webkit-linear-gradient(top left, #43E8BC 0%, #A77FEB 50%, #56ECF7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #afb3f7;
+  font-family: monospace, courier, sans-serif;
+  font-size: 90px;
+  font-weight: 900;
+}
+header > h1::before {
+	content: "to";
+	margin-right: 10px;
+}
+header > h1 {
+	margin: 0;
+  color: #8BE8CB;
+	font-size: 16px;
+  font-family: monospace, courier, sans-serif;
+	font-weight: 500;
+}
+div.main-content {
+	color: #323232;
+	padding: 20px;
+}
+div.main-content > h2 {
+	font-family: monospace, courier, sans-serif;
+	font-size: 20px;
+}
+div.main-content > h2:first-child ~ h2 {
+	margin-top: 40px;
+}
+div.main-content > h2::before {
+	content: "~$";
+	padding-right: 10px;
+	color: #17b48e;
+}
+div.main-content p {
+	font-family: calibri, arial, sans-serif;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 1.2;
+}
+div.main-content > p > strong {
+	color: #4b4b4b;
+}
+div.main-content > div.knowledge {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+div.main-content > div.knowledge > div > ul > li {
+	font-family: calibri, arial, sans-serif;
+	font-weight: 500;
+	margin: 3px 0 0 0;
+	padding-left: 5px;
+	border-radius: 5px 0 0 5px;
+}
+div.main-content > div.knowledge > div:first-child {
+	margin-right: 25px;
+}
+div.main-content > div.knowledge > div > p.st, div.main-content > div.knowledge > div > p.nd, div.main-content > div.knowledge > div > p.rd {
+	line-height: 0.4;
+}
+div.main-content > div.knowledge > div:first-child > p.st::before {
+	content: "";
+	margin-right: 5px;
+	padding: 6px;
+	display: inline-block;
+	background-color: #2d6ae8;
+	border-radius: 100%;
+}
+div.main-content > div.knowledge > div:last-child > p.st::before {
+	content: "";
+	margin-right: 5px;
+	padding: 6px;
+	display: inline-block;
+	background-color: #7943be;
+	border-radius: 100%;
+}
+div.main-content > div.knowledge > div:first-child > p.nd::before {
+	content: "";
+	margin-right: 5px;
+	padding: 6px;
+	display: inline-block;
+	background-color: #d96c12;
+	border-radius: 100%;
+}
+div.main-content > div.knowledge > div:last-child > p.nd::before {
+	content: "";
+	margin-right: 5px;
+	padding: 6px;
+	display: inline-block;
+	background-color: #01b1b1;
+	border-radius: 100%;
+}
+div.main-content > div.knowledge > div:first-child > p.rd::before {
+	content: "";
+	margin-right: 5px;
+	padding: 6px;
+	display: inline-block;
+	background-color: #55ba0f;
+	border-radius: 100%;
+}
+div.main-content > div.knowledge a {
+	color: #4e9d9d;
+	transition: .3s;
+}
+div.main-content > div.knowledge a:hover {
+	padding-left: 5px;
+}
+div.main-content > div.knowledge > div:first-child > p.rd {
+	margin-bottom: 25px;
+}
+div.main-content > div.knowledge > div:last-child > p.nd {
+	margin-bottom: 25px;
+}
+div.main-content > div.knowledge > div:first-child > ul > li.web {
+	border-left: 5px solid #2d6ae8;
+}
+div.main-content > div.knowledge > div:first-child > ul > li.lang {
+	border-left: 5px solid #d96c12;
+}
+div.main-content > div.knowledge > div:first-child > ul > li.shell {
+	border-left: 5px solid #55ba0f;
+}
+div.main-content > div.knowledge > div:last-child > ul > li.tool {
+	border-left: 5px solid #7943be;
+}
+div.main-content > div.knowledge > div:last-child > ul > li.ai {
+	border-left: 5px solid #01b1b1;
+}
+div.main-content > p.completed {
+	text-decoration: line-through;
+}
+/* TODO: Revisar esto. */
+div.main-content > div.projects {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: start;
+}
+div.main-content > div.projects > a {
+	position: relative;
+	color: #505050;
+	margin: 17px;
+	overflow: hidden;
+	font-family: calibri, arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 10px #b3b3b3;
+	border-radius: 10px;
+	width: 200px;
+	height: 150px;
+	transition: .5s;
+}
+div.main-content > div.projects > a > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	border-radius: 10px 10px 0 0;
+	overflow: hidden;
+}
+div.main-content > div.projects > a > div > span {
+	flex: 1;
+	padding-top: 5px;
+	text-align: center;
+	color: #7a7a7a;
+	font-size: 12px;
+}
+div.main-content > div.projects > a > div > span {
+	border-top: 8px solid #9e9e9e;
+}
+div.main-content > div.projects > a > div > span.java {
+	border-color: #ce8e59;
+}
+div.main-content > div.projects > a > div > span.cpp {
+	border-color: #ff8cfa;
+}
+div.main-content > div.projects > a > div > span.html {
+	border-color: #ff7500;
+}
+div.main-content > div.projects > a > div > span.css {
+	border-color: #8055f3;
+}
+div.main-content > div.projects > a > div > span.php {
+	border-color: #6e93fc;
+}
+div.main-content > div.projects > a > div > span.js {
+	border-color: #ffe100;
+}
+@media screen and (min-width:507px) {
+	div.main-content > div.projects > a:hover {
+		transform: scale(1.05);
+	}
+}
+@media screen and (max-width:507px) {
+	div.main-content > div.projects > a {
+		width: 100%;
+	}
+}
+@media screen and (max-width:600px) {
+	header > p {
+		font-size: 60px;
+	}
+}
+@media screen and (max-width:500px) {
+	header > p {
+		font-size: 40px;
+		margin-bottom: 10px;
+	}
+}

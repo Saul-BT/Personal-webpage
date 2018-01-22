@@ -1,0 +1,28 @@
+header > p > span.hat {
+	position: relative;
+	-webkit-text-fill-color: #CC000A;
+}
+header > p > span.hat > span {
+	-webkit-text-fill-color: white;
+}
+header > p > span.hat::after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	padding: 0.1em;
+	background: white;
+	border-radius: 100%;
+	top: 50%; right: -8px;
+	transform: translateY(-60%);
+}
+a.alias {color: #15AE13FF}
+div.main-content > h2::before {
+	content: "🎅~$" !important;
+}
+div.main-content > div.projects > a > h4:first-letter {color: #CC000A}
+div.main-content > div.projects > a > div > span:nth-child(2n+1) {
+	border-color: #D00100FF !important;
+}
+div.main-content > div.projects > a > div > span:nth-child(2n+2) {
+	border-color: #05AA13FF !important;
+} 
