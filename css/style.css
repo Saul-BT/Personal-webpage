@@ -1,5 +1,6 @@
 /* @import url("winter.css"); */
 
+/* General styles */
 footer, header, menu {display: block;}
 body {margin: 0; padding: 0; line-height: 1;}
 ol, ul {list-style: none;}
@@ -62,6 +63,8 @@ div.main-content p {
 div.main-content > p > strong {
 	color: #4b4b4b;
 }
+
+/* Knowledge section */
 div.main-content > div.knowledge {
 	display: flex;
 	flex-flow: row wrap;
@@ -149,9 +152,13 @@ div.main-content > div.knowledge > div:last-child > ul > li.tool {
 div.main-content > div.knowledge > div:last-child > ul > li.ai {
 	border-left: 5px solid #01b1b1;
 }
+
+/* Purposes section */
 div.main-content > p.completed {
 	text-decoration: line-through;
 }
+
+/* Projects section */
 div.main-content > div.projects {
 	display: flex;
 	flex-flow: row wrap;
