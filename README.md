@@ -1,5 +1,5 @@
 # A simple personal page
-[View an example](https://saul-bt.github.io)
+This is the repo of my previous webpage
 
 # How to use it?
 ### First of all, clone the repo:
